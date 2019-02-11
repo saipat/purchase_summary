@@ -6,7 +6,7 @@ class SubTotal extends React.Component {
             <div>
                 <div className='row'>
                     <p className="row1_name">Subtotal</p>
-                    <p>{`${this.props.price}`}</p>
+                    <p>{`${this.props.subtotal}`}</p>
                 </div>
             </div>
         )
