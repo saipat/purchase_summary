@@ -59,7 +59,7 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
     padding: 0;
-    width: 58%;
+    width: 80%;
 }
 
 .details_btn {
@@ -136,48 +136,79 @@ hr {
     margin-left: 2%;
 }
 
-@media screen and (max-width: 992px) {
-    // body {
-    //     background-color: aliceblue;
-    // }
+// @media screen and (max-width: 992px) {
+//     // body {
+//     //     background-color: aliceblue;
+//     // }
 
-    .main {
-        text-align: left;
-        width: 38%;
-    }
+//     .main {
+//         text-align: left;
+//         width: 52%;
+//     }
 
-    .pickup_savings_value {
-        margin-left: 23%;
-    }
+//     .pickup_savings_value {
+//         margin-left: 26%;
+//     }
 
-    .tax_value {
-        margin-left: 19%;
-    }
+//     .tax_value {
+//         margin-left: 14%;
+//     }
 
-    .discount_input {
-        padding: 2% 1%;
-    }
-}
+//     .discount_input {
+//         padding: 2% 1%;
+//     }
+// }
 
-@media screen and (max-width: 667px) and (min-width: 375px) {
-    // body {
-    //     background-color: olive;
-    // }
+// @media screen and (max-width: 736px) and (min-width: 414px) {
+//     .main {
+//         width: 61%;
+//     }
 
-    .main {
-        text-align: left;
-        width: 61%;
-    }
+//     .sub_total {
+//         padding-right: 45%;
+//     }
 
-    .pickup_savings_value {
-        margin-left: 12%;
-    }
+//     .pickup_savings_value {
+//         margin-left: 20%;
+//     }
 
-    .tax_value {
-        margin-left: 29%;
-    }
+//     .tax_value {
+//         margin-left: 32%;
+//     }
 
-    .discount_input {
-        padding: 1% 0%;
-    }
-}
+//     .discount_input {
+//         padding: 1% 0%;
+//     }
+
+//     .total,
+//     .total_value {
+//         font-size: 20px;
+//     }
+// }
+
+// @media screen and (max-width: 413px) and (min-width: 375px) {
+//     .main {
+//         width: 61%;
+//     }
+
+//     .sub_total {
+//         padding-right: 46%;
+//     }
+
+//     .pickup_savings_value {
+//         margin-left: 20%;
+//     }
+
+//     .tax_value {
+//         margin-left: 36%;
+//     }
+
+//     .discount_input {
+//         padding: 1% 0%;
+//     }
+
+//     .total,
+//     .total_value {
+//         font-size: 20px;
+//     }
+// }
