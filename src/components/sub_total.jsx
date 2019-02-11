@@ -4,9 +4,9 @@ class SubTotal extends React.Component {
     render(){
         return(
             <div>
-                <div className='row1'>
-                    <h3>subtotal</h3>
-                    <h3>{`${this.props.price}`}</h3>
+                <div className='row'>
+                    <p className="sub_total">Subtotal</p>
+                    <p>{`$${this.props.subtotal}`}</p>
                 </div>
             </div>
         )

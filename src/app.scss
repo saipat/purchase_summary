@@ -1,0 +1,60 @@
+.main {
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.row {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+}
+
+.sub_total{
+    padding-right: 17%;
+}
+
+.pickup_savings {
+    width: 100%;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pickup_savings_value {
+    margin-left: 10%;
+    color: red;
+}
+
+.tax {
+    width: 20%;
+}
+
+.tax_value {
+    margin-left: 5%;
+}
+
+.total{
+    // padding-top: 2%;
+    padding-right: 12%;
+}
+
+// .est_total{
+//     border-top: 1px solid #e6e7e8;
+//     box-sizing: border-box;
+// }
+
+hr.divider {
+    margin: 16px 0;
+}
+
+.divider {
+    border-color: #e6e7e8;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width: 36%;
+}
