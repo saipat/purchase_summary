@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SubTotal from './components/sub_total';
+import PickUpSavings from './components/pickup_savings';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+       title: "OFM Essentials Racecar-Style Leather Gaming Chair",
+       color: "red",
+       price: "$99.11"
+     }
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <SubTotal price={this.state.price} />
+        <PickUpSavings  />
       </div>
     );
   }
