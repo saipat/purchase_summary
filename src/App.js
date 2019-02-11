@@ -10,7 +10,8 @@ class App extends Component {
     super();
     this.state = {
       title: "OFM Essentials Racecar-Style Leather Gaming Chair",
-      color: "red",
+      color: "blue",
+      quantity: 1,
       subtotal: 102.96,
       price: 99.11,
       pickup_savings: 3.85,  
@@ -24,7 +25,7 @@ class App extends Component {
         <SubTotal subtotal={this.state.subtotal} />
         <PickUpSavings savings={this.state.pickup_savings} tax={this.state.estimated_tax} />
         <EstimatedTotal data={this.state} />
-        <ItemDetails />
+        <ItemDetails data={this.state} />
       </div>
     );
   }
