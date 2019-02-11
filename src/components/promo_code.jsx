@@ -1,14 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { handleChange } from '../actions/promo_code_actions';
+
 
 class PromoCode extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            show: false,
-            discount: ''
+            show: false
         }
     
-        this.toggle = this.toggle.bind(this)
+        this.toggle = this.toggle.bind(this);
     }
 
     toggle(){
@@ -16,16 +18,26 @@ class PromoCode extends React.Component{
             show: !this.state.show
         })
     }
+
+    handleChange = e => {
+        // the setState below will be sent to redux
+        // this.setState({ value: e.target.value });
+        this.props.handleChange(e);
+    };
+
     render(){
 
-        const discount = <form className="discount_form">
-                            <label>
-                                <span className="discount_label">Promo code</span>
-                                <br />
-                                <input type="text" value={this.props.promo_code} className="discount_input"/>
-                            </label>
-                            <button className="submit_btn" onClick={this.props.givenDiscount}>Apply</button>
-                        </form>
+        const discount =  <form className="discount_form">
+                        <label>
+                            <span className="discount_label">Promo code</span>
+                            <br />
+                            <input type="text" value={this.props.promoCode} className="discount_input" onChange={this.handleChange} />
+                        </label>
+                        <button className="submit_btn"
+                            onClick={this.props.givenDiscount}
+                            disabled={this.props.isDisabled}>Apply
+                            </button>
+                    </form>
 
         return (
             <div>
@@ -39,4 +51,9 @@ class PromoCode extends React.Component{
     }
 }
 
-export default PromoCode;
+
+const mapStateToProps = state => ({
+    promoCode: state.promoCode.value
+});
+
+export default connect(mapStateToProps, {handleChange})(PromoCode);
