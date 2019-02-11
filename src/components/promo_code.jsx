@@ -20,8 +20,6 @@ class PromoCode extends React.Component{
     }
 
     handleChange = e => {
-        // the setState below will be sent to redux
-        // this.setState({ value: e.target.value });
         this.props.handleChange(e);
     };
 

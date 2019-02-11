@@ -13,4 +13,4 @@ class SubTotal extends React.Component {
     }
 }
 
-export default SubTotal
+export default SubTotal;

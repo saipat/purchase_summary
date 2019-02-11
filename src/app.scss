@@ -33,6 +33,11 @@
     color: red;
 }
 
+Tooltip {
+    color: black;
+    background-color: white;
+}
+
 .tax {
     width: 39%;
 }
@@ -136,71 +141,3 @@ hr {
     margin-left: 2%;
 }
 
-// @media screen and (max-width: 1100px) {
-
-//     .pickup_savings_value {
-//         margin-left: 26%;
-//     }
-
-//     .tax_value {
-//         margin-left: 14%;
-//     }
-
-//     .discount_input {
-//         padding: 2% 1%;
-//     }
-// }
-
-// @media screen and (max-width: 736px) and (min-width: 414px) {
-//     .main {
-//         width: 61%;
-//     }
-
-//     .sub_total {
-//         padding-right: 45%;
-//     }
-
-//     .pickup_savings_value {
-//         margin-left: 20%;
-//     }
-
-//     .tax_value {
-//         margin-left: 32%;
-//     }
-
-//     .discount_input {
-//         padding: 1% 0%;
-//     }
-
-//     .total,
-//     .total_value {
-//         font-size: 20px;
-//     }
-// }
-
-// @media screen and (max-width: 413px) and (min-width: 375px) {
-//     .main {
-//         width: 61%;
-//     }
-
-//     .sub_total {
-//         padding-right: 46%;
-//     }
-
-//     .pickup_savings_value {
-//         margin-left: 20%;
-//     }
-
-//     .tax_value {
-//         margin-left: 36%;
-//     }
-
-//     .discount_input {
-//         padding: 1% 0%;
-//     }
-
-//     .total,
-//     .total_value {
-//         font-size: 20px;
-//     }
-// }
