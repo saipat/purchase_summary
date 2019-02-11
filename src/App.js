@@ -47,6 +47,8 @@ class App extends Component {
           disablePromoButton: true
         })
       })
+    } else {
+      alert('Wrong promo code. Try another one!')
     }
   }
 
