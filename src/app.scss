@@ -56,17 +56,21 @@ hr {
 
 .details_btn {
     border: none;
-    font-size: 16px;
-    padding: 0;
-    text-decoration: underline;
+    padding-left: 0;
+    margin-right: 10%;
 }
 
 .details_btn:focus {
     outline: none;
 }
 
-.btn_symbol {
-    
-    padding-left: 12%;
-    text-decoration: none !important;
+#btn_text {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#btn_symbol {
+    font-size: 2.7em;
+    font-weight: 200;
+    padding-left: 20px;
 }

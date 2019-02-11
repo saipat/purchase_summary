@@ -32,8 +32,8 @@ class ItemDetails extends React.Component {
         return(
             <div>
                 <button className="details_btn" onClick={this.toggle}>
-                    {this.state.show === false ? `See `  : `Hide ` }item details 
-                    <span className="btn_symbol">{this.state.show === false ? `+` : `-`}</span>
+                    <span id="btn_text">{this.state.show === false ? `See `  : `Hide ` }item details </span>
+                    <span id="btn_symbol">{this.state.show === false ? `+` : `-`}</span>
                 </button>
                 {this.state.show === true ? item_details : ''} 
             </div>
