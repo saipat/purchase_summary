@@ -3,6 +3,7 @@ import SubTotal from './components/sub_total';
 import PickUpSavings from './components/pickup_savings';
 import EstimatedTotal from './components/estimated_total';
 import ItemDetails from './components/item_details';
+import PromoCode from './components/promo_code';
 import './app.scss';
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
         <PickUpSavings savings={this.state.pickup_savings} tax={this.state.estimated_tax} />
         <EstimatedTotal data={this.state} />
         <ItemDetails data={this.state} />
+        <PromoCode />
       </div>
     );
   }
