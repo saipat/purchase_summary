@@ -24,7 +24,7 @@ class App extends Component {
         <SubTotal subtotal={this.state.subtotal} />
         <PickUpSavings savings={this.state.pickup_savings} tax={this.state.estimated_tax} />
         <EstimatedTotal data={this.state} />
-        < ItemDetails />
+        <ItemDetails />
       </div>
     );
   }

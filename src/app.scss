@@ -53,3 +53,14 @@ hr {
     padding: 0;
     width: 36%;
 }
+
+.details_btn {
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.details_btn:focus {
+    outline: none;
+}
