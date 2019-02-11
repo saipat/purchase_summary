@@ -38,7 +38,7 @@ class App extends Component {
 
   discountHandler(){
     const input = 'DISCOUNT'
-    if (this.props.promoCode === input.toLocaleLowerCase()){
+    if (this.props.promoCode.toLocaleLowerCase() === input.toLocaleLowerCase()){
       this.setState({
         estimatedTotal: this.state.estimatedTotal * 0.9
       },
